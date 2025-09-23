@@ -15,12 +15,16 @@
 
  let z=BigInt("123");
  let y=Symbol("hello");
+
  const student={
   name: "kamla",
   age:19,
   gpa:3.70,
   isTopper:false,
  };
+
+ console.log(student.name);  // no quotes is used
+ console.log(student["age"]);   // ways to aceess the key of an object.quotes must be used.
 
  
  //keywords
