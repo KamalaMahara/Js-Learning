@@ -8,12 +8,12 @@ for(let i=1; i<=10;i++){      //initialization; condition; increment/decrement
 }
 
 //calculate sum of 1 t0 n
-let sum=0;
-let n=prompt("enter the number to find sum upto");
-for(let i=1;i<=n;i++){
-  sum+=i;
-}
- console.log("the sum is:",sum);
+// let sum=0;
+// let n=prompt("enter the number to find sum upto");
+// for(let i=1;i<=n;i++){
+//   sum+=i;
+// }
+//  console.log("the sum is:",sum);
 
  //while loop
 //  let i=1;
@@ -56,3 +56,31 @@ for(let i=1;i<=n;i++){
   for(let std in student){
     console.log(std,student[std]);
   }
+
+  //task
+//   let num=prompt("enter the number of 2 digit ");
+//   let guess=13;
+// while(num!=guess){
+//   num=prompt(" sorry wrong number enter another number");
+
+// }
+// alert(" correct guess you win 🎉🎇🎊");
+
+
+//Strings 
+// strings are the sequence of characters
+let names="kamalamahara";
+console.log(names.length);
+console.log(names);
+
+//template literal and string interpolation 
+// this uses back-ticks rather than the quotes to define a string. it allows both single and double quotes inside a string.
+age=19;
+let txt=` \t hello guys its me "kamala"  'mahara' \n im ${age} years old`;
+
+console.log(txt);
+
+//string  function/methods in js
+//string length
+let user="kjadkaerwerw";
+console.log(user.length);
