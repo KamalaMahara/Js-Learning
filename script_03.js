@@ -81,6 +81,21 @@ let txt=` \t hello guys its me "kamala"  'mahara' \n im ${age} years old`;
 console.log(txt);
 
 //string  function/methods in js
-//string length
+//string length()
 let user="kjadkaerwerw";
-console.log(user.length);
+console.log(user.length); // it counts the number of length in a string
+
+// string concat()
+let str1="hello ";
+let str2="world";
+let result=str1.concat(str2);
+console.log(result);          // this method joins the two  or more differnt strings.
+
+//string charAt()
+let cha1="kamala";
+console.log(cha1.charAt(2));  //this returns the character at specified index or the position in a string.
+
+//string slice()
+let abc="oh hello world this is me kamala";
+console.log(abc.slice(2,14));            //this function extracts a part of a string and returns the extracted part in a new string .it takes 
+ //output:hello world                      2 parameters start positioin and end position.
