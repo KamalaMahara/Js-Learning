@@ -99,3 +99,30 @@ console.log(cha1.charAt(2));  //this returns the character at specified index or
 let abc="oh hello world this is me kamala";
 console.log(abc.slice(2,14));            //this function extracts a part of a string and returns the extracted part in a new string .it takes 
  //output:hello world                      2 parameters start positioin and end position.
+
+ //string toUpperCase()
+ let str3="kamla";
+ console.log(str3.toUpperCase());     //it converts the simple string into Uppercase
+
+ //string toLowerCase()
+ let str4="MAHARA";
+ console.log(str4.toLowerCase());  //it converts the uppercase string into Lowercase string
+
+ //string Trim()
+ let str5="     heloo world   ";
+ console.log(str5);
+ console.log(str5.trim());           // it removes the whitespaces from both sides of the string
+
+ //string replace()
+ let str9="hello";
+ console.log(str9.replace("h","y")); // it replaces a specified value with another value in a string 
+
+ //string replaceAll()
+ let str8="hello world";
+ console.log(str8.replaceAll("l","b"));  //it replaces all the "l" letters into "b" in the string
+
+
+ 
+
+
+
