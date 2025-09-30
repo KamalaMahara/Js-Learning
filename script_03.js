@@ -8,19 +8,19 @@ for(let i=1; i<=10;i++){      //initialization; condition; increment/decrement
 }
 
 //calculate sum of 1 t0 n
-// let sum=0;
-// let n=prompt("enter the number to find sum upto");
-// for(let i=1;i<=n;i++){
-//   sum+=i;
-// }
-//  console.log("the sum is:",sum);
+let sum=0;
+let n=prompt("enter the number to find sum upto");
+for(let i=1;i<=n;i++){
+  sum+=i;
+}
+ console.log("the sum is:",sum);
 
  //while loop
-//  let i=1;
-//  while(i<=5){
-//   console.log("hello world");
-//   i++;
-//  }
+ let i=1;
+ while(i<=5){
+  console.log("hello world");
+  i++;
+ }
 
  //do..while..loop
  //this loop execute at least once and then check the condition
@@ -58,13 +58,13 @@ for(let i=1; i<=10;i++){      //initialization; condition; increment/decrement
   }
 
   //task
-//   let num=prompt("enter the number of 2 digit ");
-//   let guess=13;
-// while(num!=guess){
-//   num=prompt(" sorry wrong number enter another number");
+  let num=prompt("enter the number of 2 digit ");
+  let guess=13;
+while(num!=guess){
+  num=prompt(" sorry wrong number enter another number");
 
-// }
-// alert(" correct guess you win 🎉🎇🎊");
+}
+alert(" correct guess you win 🎉🎇🎊");
 
 
 //Strings 
@@ -92,7 +92,7 @@ let result=str1.concat(str2);
 console.log(result);          // this method joins the two  or more differnt strings.
 
 //string charAt()
-let cha1="kamala";
+let cha1="Learning JS";
 console.log(cha1.charAt(2));  //this returns the character at specified index or the position in a string.
 
 //string slice()

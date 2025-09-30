@@ -54,24 +54,13 @@ console.log("less than or equals to  :",x<=y);
 //Logical operator
 let num1=10;
 let num2=20;
-
 let cod1=(num1==10);
 let cod2=(num1==num2);
 console.log("the logical operator &&:",(cod1&&cod2));  // both codition must be same then only it will return true
 console.log("the logical operator ||:",(cod1||cod2));
 console.log("the logical operator !:",!(cod1==cod2));
 
-//conditional statements
-let vote="balen"
-let age=16;
-
-if(vote=="balen" && age>=16){
-  console.log("you are true gen Z and can vote BALEN SHAH");
-}
-else{
-  console.log("you are  a JHOLEY ");
-}
-
+//task
 let mode="white";
 let color;
 
@@ -108,7 +97,7 @@ else{
 
    let marks=prompt("enter the marks you scored");
    if(marks>=80){
-    console.log("congratulation successful person you got A");
+    console.log("kangratulation successful person you got A");
    }
    else if(marks>=70 && marks<=79 ){
     console.log("congratulation successful person you got B");
