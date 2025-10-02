@@ -55,3 +55,26 @@ let arr=[1,12,13,32,14,41];
 arr.forEach((items,index)=>{
   console.log(`the square of array elements in index ${index} :`,items*items);
 })
+
+//Array methds
+//Map
+//its just similar to forEach method but the one difference is that it creates a neew array by applying a provided function to every element in the original array without altering
+const num=[2,4,6,12,14,10,5,15,20];
+let newarr=num.map((elements)=>{
+  return elements*elements;
+});
+console.log(`the new array after map function: ${newarr}`);
+
+//filter
+//its used to create a new array containing elements from the original array that satisfy a specidic condition.it filters out the elements that dont meet the criteria defined in the provided callback function
+let filter_arr=[2,4,10,13,15,14,34,53];
+let evenfilter=filter_arr.filter((item)=>{
+  return item%2===0;
+})
+console.log(`the array after filter method:${evenfilter}`);
+
+//Reduce
+//it performs some operations &reduces the array to a single value.it returns that value
+let reduce_aarr=[1,2,3,4,5];
+const output=reduce_aarr.reduce((prev,curr)=>{return prev+curr;})
+console.log(output);
