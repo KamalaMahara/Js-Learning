@@ -63,6 +63,7 @@ const num=[2,4,6,12,14,10,5,15,20];
 let newarr=num.map((elements)=>{
   return elements*elements;
 });
+
 console.log(`the new array after map function: ${newarr}`);
 
 //filter
