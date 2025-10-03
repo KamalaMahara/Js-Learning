@@ -75,7 +75,13 @@ let evenfilter=filter_arr.filter((item)=>{
 console.log(`the array after filter method:${evenfilter}`);
 
 //Reduce
-//it performs some operations &reduces the array to a single value.it returns that value
+//it performs some operations &reduces the array to a single value.it returns that value.it has 2 parameters,
 let reduce_aarr=[1,2,3,4,5];
 const output=reduce_aarr.reduce((prev,curr)=>{return prev+curr;})
 console.log(output);
+//given array of marks of student.filter out the marks of student that score 90+
+let std=[50,60,70,90,91,95,100,93];
+let marks=std.filter((num)=>{
+  return num > 90;
+})
+console.log("the marks of the student that scored 90+ :",std);
