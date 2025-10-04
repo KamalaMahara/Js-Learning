@@ -33,8 +33,33 @@ text.innerText="its the text element changed by inner text property in the id di
 console.log(text.innerText);
 //innerHTML
 console.log(a.innerHTML);//it returns the html content of the element
-a.innerHTML="<h2>good night guys literally its 11:30 pm</h2>";//it sets the html content of the element
-console.log(a.innerHTML);
+// a.innerHTML="<h2>good night guys literally its 11:30 pm</h2>";//it sets the html content of the element
+// console.log(a.innerHTML);
 
 //textContent
 console.log(a.textContent);//it returns the text content of the element including hidden elements
+
+let x=document.querySelector("h2");
+console.log(x.innerText)
+x.innerText=x.innerText  +" from mnr nepal";
+console.log(x.innerText);
+ 
+let ch=document.querySelectorAll(".box");
+ch.forEach((e)=>{
+  e.style.color="red";
+})
+
+for(let div of ch){
+  div.style.backgroundcolor="yellow";
+}
+function check(){
+  let char1;
+  let length=document.f1.pass.value.length;
+  if(length>5){
+    char1="good password";
+  }
+  else{
+     char1="poor password";
+  }
+  document.getElementById("length").innerText=char1;
+}
