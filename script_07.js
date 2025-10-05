@@ -97,3 +97,63 @@ btn1.onclick=(evt)=>{
 // event handling ko lagi yo method best hunxa kinaki jasto inline event le html element mai event handling grxa jasko drawback, code messy r bulkey hunxa ani yo vanda better way vaneko event handler ho jasma event hanling js file ma garinxa but yesle euta matra event handler attach garxa tessaile eutai node ma nultiple event handler attach garnu xa vane yo method use garinxa
 
 //syntax : element.addEventListener(event,eventhandlerfunction);
+let btn2=document.querySelector("#btn2");
+btn2.addEventListener("click",()=>{
+  btn2.setAttribute("style", "color:white; border:solid 2px green;background-color:blue; border-radius:20px;");
+})
+btn2.addEventListener("click",()=>{
+ alert("Thanks for your support 😘");
+})
+let para1=document.querySelector("#para1");
+let btn3=document.querySelector("#btn3");
+let likes=()=>{
+ para1.innerText="thanks for liking ";
+}
+btn3.addEventListener("dblclick",likes)
+
+//2.removeEventListener():this method is used to remove an event listener from an element.
+//syntax:element.removeEventListener(event,eventhandlerfunctioinn)
+btn3.removeEventListener("dblclick",likes)
+
+//UI events 
+/* load,unload,error,resize,scroll
+
+Keyboard events
+keydown,keyprress,keyup
+
+Mouse events
+click,dblclick,mousedown,mouseup,mousemove,mouseover,mouseout
+
+form events
+focus,submit,change,blur etc
+*/
+
+//Event propagation
+let parent = document.querySelector("#parent");
+  let child = document.querySelector("#child");
+
+  parent.addEventListener("click", () => {
+    alert("Parent Div clicked!");
+  });
+
+  child.addEventListener("click", () => {
+    alert("Child Button clicked!");
+  });
+  //event propagation vannale event handler function ko execution order lai bujhauxa when multiple event listeners are attached to nested elements.here parent div is the outer element and child button is the inner element.when we click on the child button both the child buttons and parent div event handlers are triggered.ho yessailae vanxa event propagation
+
+  //task:- mode button
+  let currentMode="light";
+  let modebtn=document.querySelector("#mode");
+  modebtn.addEventListener("click",()=>{
+    if(currentMode==="light"){
+      document.body.setAttribute("style","background-color:black;color:white");
+     currentMode="dark";
+    }
+    else{
+      document.body.setAttribute("style","background-color:white;color:black");
+      currentMode="light";
+    }
+
+
+  })
+
