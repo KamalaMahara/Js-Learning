@@ -62,3 +62,38 @@ function doubleClick(){
 
  //methods to appy events
  //1.inline events
+//2.event handler
+let btn1=document.querySelector("#btn1");
+// btn1.onclick=()=>{
+//   btn1.setAttribute("style", "color:white;border-radius:30px; background-color:blue; border:solid 1px yellow;");
+// }
+
+
+// Event Object
+//when an event occurs,an event object is automatically created and passed to the event handler function as an argument.this object contains the details about the event that occured,such as the type of event,the target element,the mouse position etc. syntax: node.event=(event objects variable)=>{}
+btn1.onclick=(evt)=>{
+  console.log(evt);
+}
+//peoperties of event object
+//1.type: it returns the type of event that occurred
+btn1.onclick=(evt)=>{
+ console.log(evt.type);
+}
+
+
+
+//2.target:it returns the element that triggered the event
+btn1.onclick=(evt)=>{
+  console.log(evt.target);
+}
+
+//3.clientX and clientY:it returns the x and y coordinates of the mouse pointer relative to the viewport when the event occured 
+btn1.onclick=(evt)=>{
+  console.log(evt.clientX,evt.clientY);
+}
+
+//Event Listeners: 
+//1.addEventListener():this method is used to attach an event listener to an element.it takes two arguments:the type of event to listen for and the event handler functioin to be executed when the event occurs.
+// event handling ko lagi yo method best hunxa kinaki jasto inline event le html element mai event handling grxa jasko drawback, code messy r bulkey hunxa ani yo vanda better way vaneko event handler ho jasma event hanling js file ma garinxa but yesle euta matra event handler attach garxa tessaile eutai node ma nultiple event handler attach garnu xa vane yo method use garinxa
+
+//syntax : element.addEventListener(event,eventhandlerfunction);
