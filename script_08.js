@@ -32,6 +32,28 @@ console.log(new Date());
 console.log(new Date(2025, 10, 7, 5, 11)); // new Date(year,month,date,hour,minute,second,milisecond)
 
 //methods of Date objects
-conosole.log("date objects mehods");
 
-console.log(getDate());
+let date = new Date();
+console.log(date); // it returns present day's date and time
+
+let year = date.getFullYear();
+console.log(year);
+
+let month = date.getMonth();
+console.log(month);
+
+let month_date = date.getDate();
+console.log(month_date);
+
+let hours = date.getHours();
+console.log(hours);
+
+let minute = date.getMinutes();
+console.log(minute);
+
+const clock = () => {
+  let date = new Date();
+  document.querySelector("#clock").innerHTML = date;
+  setTimeout(clock, 1000);
+};
+clock();
