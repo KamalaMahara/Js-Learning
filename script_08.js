@@ -36,7 +36,9 @@ console.log(new Date(2025, 10, 7, 5, 11)); // new Date(year,month,date,hour,minu
 let date = new Date();
 console.log(date); // it returns present day's date and time
 
-let year = date.getFullYear();
+let year = getFullYear();
+console.log(year);
+let day = date.getDay();
 console.log(year);
 
 let month = date.getMonth();
