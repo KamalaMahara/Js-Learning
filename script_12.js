@@ -68,8 +68,8 @@ function greet() {
 }
 
 //2.var declarations are hoisted, but not the value becase the initialization happens later
-// console.log(a); //undefineed (not err)
-// var x = 90;
+console.log(a); //undefineed (not err)
+var x = 90;
 
 //what actually happens behind the scenes:
 /* var a; //declaration hoisted 
@@ -77,8 +77,8 @@ console.log(a);
 a=90; */
 
 //3.  let and const are hoisted but in a "Temporal Dead Zone"
-// console.log(a); // ❌ ReferenceError
-// // let a = 5;
+console.log(a); // ❌ ReferenceError
+let a = 5;
 
 //With let and const, hoisting still happens internally, but they are placed in a Temporal Dead Zone (TDZ) — meaning we  can’t access them before declaration.
 
