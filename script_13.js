@@ -8,4 +8,14 @@
   })
   .catch(error => {
     // handle error
-  }); */
+  }); 
+   URl means the address we wanna fetch data from 
+
+   options means optional object to define the method (GET,POST,PUT,etc),headers,body,etc
+  */
+let URl = "https://cat-fact.herokuapp.com/facts";
+const getFacts = async () => {
+  console.log("fetching data .....");
+  let promise = await fetch(URL);
+  console.log(promise);
+};
