@@ -1,4 +1,17 @@
+//http verbs:HTTP methods (or verbs) tell the server what kind of action the client (like your browser or app) wants to perform on a resource (like data, files, or webpages).When you make a request to a web server (like when you visit a website or use an API), you use one of these methods.
+//1.GET:Retrieves (reads) data from the server. It does not change anything on the server.
+//2.POST: Sends (creates) new data to the server.
+//3.PUT: Updates existing data on the server (replaces the entire resource).
+
+//4.PATCH:Updates part of an existing resource (partial modification).
+
+//5. DELETE: Removes a resource from the server
+//6. HEAD:Similar to GET, but only requests headers (no body/content). Used to check metadata.
 //AJAX:its a asynchronous JS & XML
+//7.OPTIONS:Asks the server which HTTP methods are allowed for a resource.
+
+//8.CONNECT:Converts the request into a transparent TCP/IP tunnel, often used for HTTPS connections.
+//9.TRACE:Echoes back the request for debugging or testing purposes.
 
 //JSON :JSON(Javascript Object Notation) is basically a string representation of a JavaScript object.It uses key-value pairs, similar to JavaScript objects, but the keys and string values must be enclosed in double quotes ("").To send or receive data between a server and a web application.Used in APIs, configuration files, and databases (like MongoDB).
 //we can convert js objects into json strig.like
