@@ -13,7 +13,10 @@
 //8.CONNECT:Converts the request into a transparent TCP/IP tunnel, often used for HTTPS connections.
 //9.TRACE:Echoes back the request for debugging or testing purposes.
 
+//status code
+
 //JSON :JSON(Javascript Object Notation) is basically a string representation of a JavaScript object.It uses key-value pairs, similar to JavaScript objects, but the keys and string values must be enclosed in double quotes ("").To send or receive data between a server and a web application.Used in APIs, configuration files, and databases (like MongoDB).
+
 //we can convert js objects into json strig.like
 // const person = {
 //   name: "Kmla",
