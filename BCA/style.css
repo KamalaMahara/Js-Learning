@@ -1,0 +1,208 @@
+/* .container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.demo {
+  width: 150px;
+  background-color: rgb(14, 95, 122);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+img{
+  height:20px;
+  width:20px;
+  
+}
+
+#light,#dark{
+  height:50px;
+  width:50px;
+  background-color:rgb(142, 224, 236);
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  
+  
+}
+#dark,.dlabel{
+  visibility:hidden;
+} */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Cute Gradient Background */
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+}
+
+/* Main Container */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Quote Card */
+.quote-card{
+    width: 420px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 25px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.quote-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Title */
+.title{
+    font-size: 2rem;
+    color: #551e1e;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Quote Box */
+.quote-box{
+    background: rgba(255,255,255,0.35);
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+}
+
+/* Quote Text */
+.quote-text{
+    font-size: 1.1rem;
+    color: #4b2e39;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Author */
+.author{
+    color: #8b3d5c;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Button Container */
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.buttons button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* New Quote Button */
+.new-quote-btn{
+    background: #ff5e8a;
+    color: white;
+}
+
+.new-quote-btn:hover{
+    background: #ff2e6d;
+    transform: scale(1.05);
+}
+
+/* Copy Button */
+.copy-btn{
+    background: #ffffff;
+    color: #ff5e8a;
+}
+
+.copy-btn:hover{
+    background: #ffe4ec;
+    transform: scale(1.05);
+}
+
+/* Share Button */
+.share-btn{
+    background: #ffd166;
+    color: #5c3d00;
+}
+
+.share-btn:hover{
+    background: #ffbf00;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media(max-width: 500px){
+
+    .quote-card{
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .quote-text{
+        font-size: 1rem;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .buttons button{
+        width: 100%;
+    }
+}
+.copy-msg{
+    position: absolute;
+    top: 20px;
+    background: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+   opacity: 0;
+    pointer-events: none;
+    transition: 0.2s ease;
+    
+   
+}
