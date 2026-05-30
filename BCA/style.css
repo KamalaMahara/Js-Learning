@@ -40,7 +40,7 @@ img{
   visibility:hidden;
 } */
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -56,10 +56,10 @@ body{
     align-items: center;
     
     /* Cute Gradient Background */
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-}
+    /* background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+} */
 
-/* Main Container */
+/* Main Container
 .container{
     width: 100%;
     display: flex;
@@ -69,7 +69,7 @@ body{
 }
 
 /* Quote Card */
-.quote-card{
+/* .quote-card{
     width: 420px;
     background: rgba(255,255,255,0.25);
     backdrop-filter: blur(12px);
@@ -79,54 +79,54 @@ body{
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     transition: 0.3s ease;
-}
+} */
 
-.quote-card:hover{
+/* .quote-card:hover{
     transform: translateY(-5px);
 }
 
 /* Title */
-.title{
+/* .title{
     font-size: 2rem;
     color: #551e1e;
     margin-bottom: 25px;
     font-weight: 600;
     letter-spacing: 1px;
-}
+} */
 
 /* Quote Box */
-.quote-box{
+/* .quote-box{
     background: rgba(255,255,255,0.35);
     border-radius: 20px;
     padding: 25px 20px;
     margin-bottom: 25px;
-}
+}  */
 
 /* Quote Text */
-.quote-text{
+/* .quote-text{
     font-size: 1.1rem;
     color: #4b2e39;
     line-height: 1.8;
     margin-bottom: 15px;
-}
+} */
 
 /* Author */
-.author{
+/* .author{
     color: #8b3d5c;
     font-size: 1rem;
     font-weight: 500;
-}
+} */
 
 /* Button Container */
-.buttons{
+/* .buttons{
     display: flex;
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
-}
+} */
 
 /* Buttons */
-.buttons button{
+/* .buttons button{
     padding: 12px 20px;
     border: none;
     border-radius: 50px;
@@ -134,10 +134,10 @@ body{
     font-size: 0.95rem;
     font-weight: 500;
     transition: 0.3s ease;
-}
+} */
 
 /* New Quote Button */
-.new-quote-btn{
+/* .new-quote-btn{
     background: #ff5e8a;
     color: white;
 }
@@ -145,21 +145,21 @@ body{
 .new-quote-btn:hover{
     background: #ff2e6d;
     transform: scale(1.05);
-}
+} */
 
 /* Copy Button */
-.copy-btn{
-    background: #ffffff;
+/* /* .copy-btn{ */
+    /* background: #ffffff;
     color: #ff5e8a;
-}
+} */
 
-.copy-btn:hover{
+/* .copy-btn:hover{
     background: #ffe4ec;
     transform: scale(1.05);
-}
+} */
 
 /* Share Button */
-.share-btn{
+/* .share-btn{
     background: #ffd166;
     color: #5c3d00;
 }
@@ -167,10 +167,10 @@ body{
 .share-btn:hover{
     background: #ffbf00;
     transform: scale(1.05);
-}
+} */
 
 /* Responsive Design */
-@media(max-width: 500px){
+/* @media(max-width: 500px){
 
     .quote-card{
         width: 100%;
@@ -205,4 +205,153 @@ body{
     transition: 0.2s ease;
     
    
+}  */
+
+/* General container styling */
+/* Overall container */
+/* .main-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+} */
+
+/* Heading */
+/* .main-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+} */
+
+/* Form layout */
+/* .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+/* Input fields */
+/* .container input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+} */
+
+/* Button group in a row */
+/* .container button {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background: #e0e0e0;
+} */
+
+/* Arrange buttons in a grid */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} */
+
+/* .container form .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+
+/* Result section */
+/* #result {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: bold;
+} */
+
+.main-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #056344;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+#amount {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+#amount:focus {
+  border-color: #056344;
+  outline: none;
+  box-shadow: 0 0 5px rgba(5, 99, 68, 0.5);
+}
+
+h4 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #056344;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #078c5d;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#outputmessage {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #056344;
+  margin-top: 15px;
 }

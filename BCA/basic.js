@@ -108,57 +108,131 @@
 // })
 
 
-const mainQuoteText=document.querySelector(".quote-text");
-const quoteAuther=document.querySelector(".author");
-const quoteBtn=document.querySelector(".new-quote-btn");
-const copyBtn=document.querySelector(".copy-btn");
-const copyMsg=document.querySelector(".copy-msg");
-const shareBtn=document.querySelector(".share-btn");
+// const mainQuoteText=document.querySelector(".quote-text");
+// const quoteAuther=document.querySelector(".author");
+// const quoteBtn=document.querySelector(".new-quote-btn");
+// const copyBtn=document.querySelector(".copy-btn");
+// const copyMsg=document.querySelector(".copy-msg");
+// const shareBtn=document.querySelector(".share-btn");
 
 
 
-async function getQuote(){
-  try{
-    const response= await fetch("http://api.quotable.io/random");
-    const data=await response.json();
-    console.log(data);
+// async function getQuote(){
+//   try{
+//     const response= await fetch("http://api.quotable.io/random");
+//     const data=await response.json();
+//     console.log(data);
     
-    mainQuoteText.innerText=data.content;
-    quoteAuther.innerText=data.author;
+//     mainQuoteText.innerText=data.content;
+//     quoteAuther.innerText=data.author;
 
-  }
-  catch(error){
-    console.error("error fetching quote:",error);
-  }
-}
+//   }
+//   catch(error){
+//     console.error("error fetching quote:",error);
+//   }
+// }
 
-let copyTxt = async () =>{
-  const quoteText = mainQuoteText.innerText;
-  await navigator.clipboard.writeText(quoteText);
-  copyMsg.style.opacity = "1";
-  setTimeout(() =>{
-    copyMsg.style.opacity ="0"
-  }, 1000)
-}
+// let copyTxt = async () =>{
+//   const quoteText = mainQuoteText.innerText;
+//   await navigator.clipboard.writeText(quoteText);
+//   copyMsg.style.opacity = "1";
+//   setTimeout(() =>{
+//     copyMsg.style.opacity ="0"
+//   }, 1000)
+// }
  
 
-quoteBtn.addEventListener("click",getQuote);
-copyBtn.addEventListener("click",copyTxt);
-shareBtn.addEventListener("click", async ()=>{
-  try {
+// quoteBtn.addEventListener("click",getQuote);
+// copyBtn.addEventListener("click",copyTxt);
+// shareBtn.addEventListener("click", async ()=>{
+//   try {
 
-        await navigator.share({
-            title: "Motivational Quote",
-            text: "Success comes from consistency.",
-            url: "https://yourwebsite.com"
-        });
+//         await navigator.share({
+//             title: "Motivational Quote",
+//             text: "Success comes from consistency.",
+//             url: "https://yourwebsite.com"
+//         });
 
-        console.log("Shared Successfully");
+//         console.log("Shared Successfully");
 
-    } catch (error) {
+//     } catch (error) {
 
-        console.log("Sharing Failed");
+//         console.log("Sharing Failed");
 
+//     }
+
+// });
+// num1=document.querySelector("input[name='num1']");
+// num2=document.querySelector("input[name='num2']");
+// result=document.querySelector("#result");
+
+// document.querySelector("#add").addEventListener("click",(e)=>{
+//   let sum=Number(num1.value)+Number(num2.value);
+//   result.innerText=sum;
+//   e.preventDefault();
+
+// })
+// document.querySelector("#sub").addEventListener("click",(e)=>{
+//   let sub=Number(num1.value)-Number(num2.value);
+//   result.innerText=sub;
+//   e.preventDefault();
+// })
+// document.querySelector("#mul").addEventListener("click",(e)=>{
+//   let mul=Number(num1.value)*Number(num2.value);
+//   result.innerText=mul;
+//   e.preventDefault();
+// })
+// document.querySelector("#div").addEventListener("click",(e)=>{
+//   let div=Number(num1.value)/Number(num2.value);
+//   result.innerText=div;
+//   e.preventDefault();
+// })
+// document.querySelector("#mod").addEventListener("click",(e)=>{
+//   let mod=Number(num1.value)%Number(num2.value);
+//   result.innerText=mod;
+//   e.preventDefault();
+// })
+
+class BankAccont{
+  constructor(balance=0){
+    this.balance=balance;
+  }
+  deposit(amount){
+    if(amount>0){
+      this.balance +=amount;
+      return `${amount} has been sucessfully deposited`
     }
+    return ` please enter the valid amount`
+  }
+  withdraw(amount){
+    if(amount>0 && amount < this.balance){
+      this.balance-=amount;
+return ` ${amount} has been withdrawn sucessfully`
+    }
+    
+    return` insufficient balance in your account to withdraw ${amount}`
+  }
 
-});
+  checkBalance(){
+ return ` your current balance is ${this.balance}`
+  }
+}
+
+const account= new BankAccont();
+const amountInput= document.getElementById("amount");
+const outputMsg=document.getElementById("outputmessage");
+
+document.getElementById("deposit").addEventListener("click",()=>{
+
+  const Amount= parseFloat(amountInput.value)
+outputMsg.textContent=account.deposit(Amount); 
+ 
+})
+document.getElementById("withdraw").addEventListener("click",()=>{
+   const Amount= parseFloat(amountInput.value)
+   outputMsg.textContent=account.withdraw(Amount); 
+})
+
+document.getElementById("check").addEventListener("click",()=>{
+  outputMsg.textContent=account.checkBalance(); 
+})
