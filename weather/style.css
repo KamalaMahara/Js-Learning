@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#273134,#465f33);
+}
+
+.weather-card{
+    width:350px;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    text-align:center;
+    color:white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+.search-box{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.search-box input{
+    width:80%;
+    padding:12px 15px;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    font-size:16px;
+}
+
+.search-box button{
+    width:45px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.weather-info img{
+    width:120px;
+    margin:15px 0;
+}
+
+.weather-info h1{
+    font-size:60px;
+    font-weight:700;
+}
+
+.weather-info h2{
+    margin-top:10px;
+    font-size:32px;
+}
+
+.weather-info p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+.details{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.detail-box{
+    width:48%;
+    padding:15px;
+    background:rgba(255,255,255,0.2);
+    border-radius:15px;
+}
+
+.detail-box h3{
+    font-size:24px;
+    margin-bottom:5px;
+}
+
+.detail-box p{
+    font-size:14px;
+}
+#date{
+    margin-top:10px;
+    font-size:14px;
+    opacity:0.8;
+    }
+
+    .location-btn {
+    width:55%;
+    margin:10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px; /* space between icon and text */
+  background-color: #1b3e2b; /* blue background */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.location-btn:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
+
+.location-btn i {
+  font-size: 14px; /* size of the icon */
+}
